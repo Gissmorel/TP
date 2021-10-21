@@ -1,0 +1,413 @@
+* {
+    margin: 0;
+    padding: 0;
+    max-width: 100vw;
+    top: 0px;
+    left: 0px;
+    }
+
+    body {
+        height: 100vh;
+        background: rgb(244, 241, 222);
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    /*Header*/
+    .title h1 {
+        padding: 20px 0;
+        text-align: center;
+        font-size: 2.9em;
+        text-transform: uppercase;
+        color: rgb(61, 64, 91);
+        font-weight: bold;
+    }
+
+
+    nav {
+        position: sticky;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        text-align: right;
+        background: rgb(224, 122, 95);
+        padding: 10px;
+      
+    }
+    #pc a:visited {
+        color: turquoise;
+      
+      }
+      
+      .fas {
+      left: 50px;
+      color: rgb(244, 241, 222) ;
+      }
+      
+      span {
+        padding: 20px;
+        opacity: 0.6;
+        margin-bottom: auto;
+      }
+      
+      span a,
+      span a:link {
+        color: rgb(244, 241, 222) ;
+        text-decoration: none;
+      }
+      
+      span:hover {
+        border-color: cornsilk;
+        border-width: 2px;
+        border-style: dotted;
+        border-radius: 8px;
+        padding: 20px;
+        opacity: 1;
+        margin: {0 0 5 0px);
+
+        }
+      }
+
+      
+ .header {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  z-index: 999;
+  width: 100%;
+  height: 3.5rem;
+}
+
+.container > .content
+.container > .sidebar
+
+{
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  
+}
+article {
+  display: flex;
+  align-items: center;
+  border: 2px solid rgba(224, 122, 95, 0.2);
+  margin: 5px;
+  background: rgba(129, 178, 154, 0.2);
+  padding: 20px;
+}
+
+.fab,
+.far {
+color:rgb(244, 241, 222) ;
+align-items: center;
+
+}
+#animacion {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  gap: 0px 5px;
+  justify-items: stretch;
+  align-self: center;
+
+}
+
+.sidebar {
+  background: rgba(61, 64, 91, 0.5);
+  box-sizing: border-box;
+  margin: 10px;
+}
+
+.p1, .p2, .p3, .p4, .p5, .p6 {
+margin: 20px;
+color: rgb(244, 241, 222) ;
+padding: 15px;
+text-align:start;
+}
+
+img {
+  width: 100%;
+  padding: 10px;
+  height: auto;
+  text-align: center;
+  
+}
+
+img:hover{
+  filter: saturate(180%);
+  border-radius:40%;
+-webkit-border-radius:40%;
+box-shadow: 0px 0px 10px 10px rgb(244, 241, 222);
+-webkit-box-shadow: 0px 0px 15px 15px rgb(244, 241, 222);
+-webkit-transform:scale(1);transform:scale(1);
+
+}
+
+#galeria {
+  text-align: center;
+ color: rgb(61, 64, 91);
+}
+
+
+  #pe1::before {
+  content:"🔥";
+      }
+
+ .container > .sidebar img {
+  width: 50%;
+  margin-top: 5px;
+        }
+
+
+      @media screen and (max-width: 760px) {
+
+
+
+      .header {
+        display: grid;
+        text-align: center;
+    }
+      .span { 
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      text-align: left;
+      }
+      .container .content {
+        display: grid;
+        grid-column: 1/-1;
+        background: rgb(242, 204, 143);
+        color: snow;
+      }
+      .container .sidebar {
+        display: grid;
+        grid-column: 1/6;
+    
+      }
+      .container .related-post {
+        display: grid;
+        grid-column: 1/6;
+      }
+      nav {
+        background: rgb(61, 64, 91);
+      }
+
+      #animacion {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        justify-items: stretch;
+        column-gap: 5px;
+        row-gap: 5px;
+        margin: 0%;
+        background: rgba(242, 204, 143, 0.7);
+      }
+
+      img {
+        width: 100%;
+        padding: 10px;
+        height: auto;
+      }
+
+      form {
+        display: grid;
+        grid-template-columns: 1fr;
+      
+      }
+
+      .trabajo-card {
+        display: flex;
+        flex: 1;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+    }
+
+    @media screen and (min-width: 761px) and ( max-width: 1023px) {
+    
+     .container >.content {
+    display: grid; 
+    grid-template-columns: repeat(3, 1fr);
+    background: white;
+    width: 95%;
+    max-width: 100%;
+    margin: 1.6em auto;
+    gap: 1.6em;
+     }
+     .container .sidebar {
+      display: flex;
+      justify-content: space-between;
+     }
+
+    article {
+      border-radius: 5%;
+      background:rgb(242, 204, 143);
+    }
+nav {
+  background: rgb(61, 64, 91);
+  color:rgb(244, 241, 222) ;
+}
+
+  .fab,
+  .far {
+    padding: 5px;
+    text-align: center;
+  }
+
+  #animacion {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    justify-items: stretch;
+    column-gap: 10px;
+    row-gap: 10px;
+
+  }
+  img {
+    width: 80%;
+    padding: 5px;
+    height: auto;
+  }
+
+    }
+
+  @media (max-width: 500px){
+  nav{ display:none;}
+    }
+     
+
+    #movimiento {
+      width: 55px;
+      height: 55px;
+      background-image: url(../TP/fondo.png);
+      margin: auto;
+      animation: redondeo 2.5s 1s infinite;
+    }
+    
+    @keyframes redondeo {
+      0% {
+        border-radius: 0 0 0 0;
+        background-image: url(../TP/img/wallpapers/IMG-8692.png);
+        transform: rotate(0deg);
+      }
+      25% {
+        border-radius: 50% 50% 50% 50%;
+        background-image: url(../TP/img/wallpapers/IMG-8674.png);
+        transform: rotate(45deg);
+      }
+      50% {
+        border-radius: 50% 50% 50% 50%;
+        transform: rotate(90deg);
+      }
+      75% {
+        border-radius: 50% 50% 50% 50%;
+        transform: rotate(135deg);
+      }
+      100% {
+        border-radius: 50% 50% 50% 50%;
+        transform: rotate(180deg);
+      }
+    }
+
+    #container {
+      overflow: hidden;
+      border-bottom: 30px rgb(34, 27, 27) solid;
+    }
+    
+    #vespa {
+      margin-top: 30px;
+      background-image: url(../TP/img/vespa.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+      height: 200px;
+      width: 50%;
+     
+    }
+    
+    #container:hover #vespa {
+      margin-left: 100%;
+      transition: all 5s;
+      transition-timing-function: cubic-bezier(1, 0.46, 0.48, 1);
+    }
+
+    /* Itinerario */
+    .centro {
+      text-align: center;
+    }
+
+  .alfa {
+      background: rgba(61, 64, 91, 0.2);
+      margin: 2%;
+      padding: 20px;
+  }
+
+.alfa2 {
+  background: rgba(194, 141, 126, 0.2);
+  margin: 2%;
+  padding: 20px;
+}
+    
+li {
+margin: 20px;
+padding: 0px;
+list-style: none;
+}
+
+.recorrido {
+  background: cornsilk;
+  margin: 20px;
+  padding: 20px;
+}
+
+form {
+margin: 30px;
+padding: 20px;
+}
+.container > form { 
+background: white;
+border:rgb(224, 122, 95) solid;
+
+}
+ 
+.firma {
+  color: rgb(244, 241, 222);
+}
+
+.trabajo-card {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: auto;
+  justify-items: stretch;
+  margin: 20px;
+  text-align: start;
+  border: 2px solid rgba(224, 122, 95, 0.2);
+  background: rgba(129, 178, 154, 0.2);
+  padding: 20px;
+}
+
+.p {
+  margin: 20px;
+  padding: 10px;
+
+}
+
+
+.trabajo-card:hover img{
+  border-radius: 0%;
+  transition: .5s;
+}
+
+.trabajo-card img {    border-radius: 50%; }
+
+.trabajo-card-info {
+  position: absolute;
+  opacity: 0.3;    }
+
+  .trabajo-card:hover  {
+    border-radius: 0%;
+    opacity: 1;
+    pointer-events: auto;
+  }
+  
+

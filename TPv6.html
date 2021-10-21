@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+  
+    <link rel="stylesheet" href="tp2_css.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300&display=swap" rel="stylesheet">
+<link rel="shortcut icon" href="flor.ico.ico" type="image/x-icon">
+
+<script src="https://kit.fontawesome.com/ce96a42668.js" crossorigin="anonymous"></script>
+
+
+
+    <title>Trabajo Final</title>
+</head>
+<body>
+
+
+<header>
+
+<nav class="span">
+  <h1><i class="fas fa-spa"></i></h1>
+    <span id="pc"><a href="#quienes-somos" class= "menuitem" target="_self">Quienes somos</a></span>
+ <span><a href="#galeria" class="menuitem" target="_self"> Galeria </a></span>
+    <span id="pc"><a href="../TP/itinerario2.html" class= "menuitem" target="_self">Itinerario</a></span>
+    <span id="pc"><a href="../TP/Reseñas.html" class= "menuitem" target="_self">Reseñas</a></span>
+    <span><a href="#contacto" class="menuitem" target="_self">Contacto</a></span>
+  
+</header>
+<br>
+
+
+    <header class="title">
+<h1>Ciao <i id= "movimiento"class="fas fa-spa"></i> Italia</h1>
+    </header>
+<br>
+<div class="container">
+    
+
+    <main class="content" id="main">
+
+   <article id="quienes-somos">
+    <div class="article">
+    <h1>Quienes Somos</h1><br>
+<p id="pe1">Somos Daniela y Leonardo y estamos detras de <strong>Ciao Italia</strong> Guiados por nuestra pasion por viajar y conocer te invitamos a la aventura con nosotros.</p>
+<p>Queremos compartir lo que nos gusta hacer.</p>
+
+
+</div>
+   </article>
+
+<article id="titulo2" >
+    <div class="article">
+    <h1>¿Viajamos?</h1><br>
+<p>Tenemos armada la próxima salida, podes mirarla, preguntar y si se te ocurre otras opciones te las podemos armar!!!
+</p>
+</div>
+   </article>
+
+   <article>
+    <div class="article">
+    <h1>¡¡¡Divertite!!!</h1><br>
+<p>Se escibe viajar, pero significa vivir.</p>
+<p>Por eso estamos deseando que llegue el dia para volver a hacer las valijas y recorrer juntos.</p>
+<p>Estaremos recorriendo varias ciudades, lugares mas turisticos y otros no tanto, sin olvidarnos de su gastronomia y sus gloriosas pastas.</p>
+Te lo contanos todo en el itinerario. ¡Pasa a verlo!</p>
+</div>
+   </article> 
+
+</main>
+</div>
+
+
+<br><br><br>
+
+<div class="content">
+    <aside><h2 id="galeria">Galeria</h2><br></aside>    
+<aside class="sidebar">
+    <div id="animacion">    
+<div class="p1"><img src="../TP/img/Italia1.jpg" alt="" width= "400" height=""><br>
+<p> <strong> Venecia: </strong>Puente de Rialto.
+</p><br>
+</div>
+
+<div class="p2"><img src="../TP/img/Italia2.jpg" alt=""width= "400" height=""><br>
+    <p><strong> Roma:</strong> Foto tomada desde el Tevere.
+    </p><br>
+    </div>
+
+    <div class="p3"><img src="../TP/img/Italia3.jpg" alt="" width= "400" height="300"><br>
+        <p><strong>La Toscana.</strong>
+        </p><br>
+        </div>
+        <div class="p4"><img src="../TP/img/italia4.jpg" alt="" width= "400" height="300"><br>
+            <p><strong>Roma: </strong>La Fontana di Trevi.
+            </p><br>
+            </div>
+        <div class="p5"><img src="../TP/img/italia5.jpg" alt="" width= "400" height="300"><br>
+            <p><strong>Cinque Terre.</strong>
+            </p><br>
+             </div>    
+             <div class="p6"><img src="../TP/img/italia6.jpg" alt="" width= "400" height="300"><br>
+                <p><strong>Roma:</strong> El Coliseo.
+                </p><br>
+                 </div> 
+  </div>
+
+</aside>
+</div>
+
+<div id="container">
+    <div id="vespa"></div>
+  </div>
+ 
+    <div class="container" id="contacto">
+
+      <form action="" method="" id="un_formulario">
+        <h4><strong>¡Contactanos!</strong></h4>
+        <hr><br><br>
+        <div>
+          <label for="nombre" class="titulo">Nombre:</label>
+          <input type="text" name="nombre" id="nombre" class="campo" maxlength="15" pattern="[A-Za-z]{2,15}" required><br><br>
+          <label for="apellido" class="titulo">Apellido:</label>
+          <input type="text" name="apellido" id="apellido" class="campo" maxlength="15" pattern="[A-Za-z]{2,15}" required><br><br>
+          
+          <label for="dia" class="titulo">Fecha de nacimiento:</label>
+          <span class="campo">
+            <input type="number" name="dia" id="dia" size="2" min="1" max="31" required>
+            <input type="number" name="mes" id="mes" size="2" min="1" max="12" required>
+            <input type="number" name="agno" id="agno" size="4" min="1950" max="2010" required>
+          </span><br><br>
+
+      
+          <label for="tel" class="titulo">Teléfono:</label>
+          <input type="tel" name="tel" id="tel" class="campo" pattern="[0-9]{8}" title="Introduzca 8 cifras" placeholder="Introduzca 8 cifras" required><br><br>
+        
+      
+          <p id="mensaje_error"></p>
+
+        
+          <div class="h1" id="hola">¿Tenes pasaporte vigente?</div>
+          <br>
+          <select name="selector" id="selector">
+            <option value="0" disabled selected>Elija una opción</option>
+            <option value="1">Si, Argentino</option>
+            <option value="3">Si, Comunidad Europea</option>
+            <option value="3">Si, Argentino y Comunidad Europea</option>
+            <option value="2">NO</option>
+          </select>
+        <br><br>
+
+      
+        <div id="emailHelp" class="form-text">Dejanos tu comentario.</div>
+      </div>
+  
+      <div class="input-group">
+        <span class="input-group-text"></span>
+        <br>
+        <textarea class="form-control" aria-label="With textarea"></textarea>
+      </div><br><br>
+
+
+      <label for="mail" class="titulo">Email:</label>
+      <input type="mail" name="mail" id="mail" class="campo" placeholder="Email" onclick="valida_mail()" required><br><br>
+
+
+     <div class="campo">
+            <input type="checkbox" id="mayor" name="mayor" value="mayor">
+            <label for="mayor">Tengo mas de 18 años!.</label>
+      </div><br>
+            <input type="submit" name="send" id="send" value="Enviar">
+            <input type="reset" name="clear" id="clear" value="Borrar">
+          </span><br><br><hr>
+       
+      <div><p>
+        <strong>
+        ¡¡¡En Breve nos estaremos comunicando con vos, Muchas gracias por contactarte con nosotros!!!!
+        </p></strong></div>
+
+
+      </form>
+
+<footer class="footer">
+
+ 
+    <nav . class="span"><p class="firma">2021 - @Giselle_M.</p>
+    <i class="fab fa-twitter"></i>
+    <i class="fab fa-facebook"></i>
+    <i class="fab fa-instagram"></i>
+    <i class="far fa-envelope"></i>
+</nav>
+</footer>
+
+
+
+</div>
+
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<script> src= "java_1.js"</script>
+</body>
+</html>
