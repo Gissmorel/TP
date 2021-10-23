@@ -409,5 +409,6 @@ border:rgb(224, 122, 95) solid;
     opacity: 1;
     pointer-events: auto;
   }
-  
-
+  iframe {
+  width: 100%;
+}
