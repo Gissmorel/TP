@@ -1,3 +1,4 @@
+
 window.onload = iniciar;
 
 function iniciar() {
@@ -15,7 +16,7 @@ function iniciar() {
   function valida_apellido() {
     var elemento = document.getElementById('apellido');
     if (elemento.value ==''){
-      alert('El campo nombre no puede estar vacío');
+      alert('El campo apellido no puede estar vacío');
       return false
     }
     return true;
@@ -31,27 +32,6 @@ function iniciar() {
     }
     return true;
   }
-  
-  function valida_mail() {
-    var elemento = document.getElementById('mail');
-    if (/^([a-zA-Z0-9\._])+@([a-a-zA-9])+.([a-z]+)(.[a-z]+)?$/.test(elemento.value))
-        return true
-    else if
-      alert("Escriba un mail válido")
-      return false
-    }
-  }
-
-/*     var regx = /^([a-zA-Z0-9\._])+@([a-a-zA-9])+.([a-z]+)(.[a-z]+)?$/
-      if(regx.text(mail))  {
-        alert ("su correo es correcto")
-        return true;
-     }
-      else {
-        alert ("su correo es incorreco")
-        return false;
-      } */
-
 
   
   function valida_check() {
@@ -62,9 +42,17 @@ function iniciar() {
   }
   return true;
   }
+  function pruebaemail (valor){
+    re=/^([\da-z_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/
+    if(!re.exec(valor)){
+      alert('email no valido');
+      return false;
+    }
+    else true;
+    }
   
   function validate(e){
-    if(valida_nombre() && valida_telefono() && valida_check() && confirm('Desea enviar?')){
+    if(valida_nombre() && valida_apellido() && valida_telefono() && valida_pruebaemail() && valida_check() && confirm('Desea enviar?')){
       return true;
     } else {
       // evito que se envíe el formulario
@@ -73,3 +61,14 @@ function iniciar() {
       return false;
     }
   }
+
+/* Pop-up */
+  function window_open(url){
+    window.open( "../TP/Untitled-1.html", "nombrePop-Up", "width=380,height=500, top=85,left=50");
+   }
+   document.getElementById("botonWindowOpen").onclick = function() {window_open()};
+
+
+
+
+    
