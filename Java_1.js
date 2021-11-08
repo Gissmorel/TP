@@ -21,14 +21,18 @@ function iniciar() {
     }
     return true;
   }
-
-
-  
   function valida_telefono() {
-  var elemento = document.getElementById('tel');
-    if (isNaN(elemento.value)){
-      alert('El campo teléfono debe ser un número');
-      return false
+    var elemento = document.getElementById('tel');
+    if (!elemento.checkValidity()) {  //comprueba si la validación HTML es correcta
+    if(elemento.validity.valueMissing){
+        error2(elemento, 'Debe introducir un número de teléfono');
+      }
+      if(elemento.validity.patternMismatch){
+        alert('El campo telefono debe tener 11 cifras');
+        error2(elemento, 'Debe tener 11 cifras');
+      }
+      //error(elemento);    
+      return false;
     }
     return true;
   }
@@ -42,8 +46,9 @@ function iniciar() {
   }
   return true;
   }
+
   function pruebaemail (valor){
-    re=/^([\da-z_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/
+    var re= /^([\da-z_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/
     if(!re.exec(valor)){
       alert('email no valido');
       return false;
@@ -62,11 +67,11 @@ function iniciar() {
     }
   }
 
-/* Pop-up */
-  function window_open(url){
+/* Pop-up
+   function window_open(url){
     window.open( "../TP/Untitled-1.html", "nombrePop-Up", "width=380,height=500, top=85,left=50");
    }
-   document.getElementById("botonWindowOpen").onclick = function() {window_open()};
+   document.getElementById("botonWindowOpen").onclick = function() {window_open()}; */
 
 
 
